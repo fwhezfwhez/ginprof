@@ -11,7 +11,7 @@ func ProfRouter(r gin.IRoutes) {
 	// 主页面
 	r.GET("/debug/pprof/", adapt(pprof.Index))
 
-	r.GET("/debug/pprof/Profile", Profile())
+	r.GET("/debug/pprof/profile", Profile())
 
 	r.GET("/debug/pprof/heap", Heap())
 
